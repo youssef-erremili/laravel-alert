@@ -1,0 +1,32 @@
+{
+    "name": "youssef-erremili/laravel-alert",
+    "description": "this project is aim to gives developera a new expierence with alerts in laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "YoussefErremili\\LaravelAlert\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ],
+        "authors": [
+            {
+                "name": "youssef-erremili",
+                "email": "yousseferremili19@gmail.com"
+            }
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YoussefErremili\\Alert\\AlertServiceProvider"
+            ],
+            "aliases": {
+                "Alert": "YoussefErremili\\Alert\\AlertFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
