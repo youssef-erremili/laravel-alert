@@ -1,6 +1,6 @@
 {
     "name": "youssef-erremili/laravel-alert",
-    "description": "this project is aim to gives developera a new expierence with alerts in laravel",
+    "description": "This project aims to give developers a new experience with alerts in Laravel.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -9,14 +9,14 @@
         },
         "files": [
             "src/helpers.php"
-        ],
-        "authors": [
-            {
-                "name": "youssef-erremili",
-                "email": "yousseferremili19@gmail.com"
-            }
         ]
     },
+    "authors": [
+        {
+            "name": "youssef-erremili",
+            "email": "yousseferremili19@gmail.com"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
