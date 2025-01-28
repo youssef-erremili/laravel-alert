@@ -3,10 +3,18 @@
     "description": "This project aims to give developers a new experience with alerts in Laravel.",
     "type": "package",
     "license": "MIT",
-    "keywords": ["alert", "laravel", "notification", "message", "flash", "session", "toast"],
+    "keywords": [
+        "alert",
+        "laravel",
+        "notification",
+        "message",
+        "flash",
+        "session",
+        "toast"
+    ],
     "autoload": {
         "psr-4": {
-            "Errehub\\LaravelAlert\\": "src"
+            "Errehub\\LaravelAlert\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -31,7 +39,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.2",
-        "illuminate/support": "^10.0"
-    }
+        "php": ">=8.2"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/vendor/errehub"
+        }
+    ]
 }
