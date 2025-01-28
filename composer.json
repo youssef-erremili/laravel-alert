@@ -3,6 +3,7 @@
     "description": "This project aims to give developers a new experience with alerts in Laravel.",
     "type": "library",
     "license": "MIT",
+    "keywords": ["alert", "laravel", "notification", "message", "flash", "session", "toast"],
     "autoload": {
         "psr-4": {
             "Errehub\\LaravelAlert\\": "src/"
