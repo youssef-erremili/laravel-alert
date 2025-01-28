@@ -1,11 +1,12 @@
 {
-    "name": "youssef-erremili/laravel-alert",
+    "name": "errehub/laravelalert",
     "description": "This project aims to give developers a new experience with alerts in Laravel.",
     "type": "library",
     "license": "MIT",
+    "version": "1.0.2",
     "autoload": {
         "psr-4": {
-            "YoussefErremili\\LaravelAlert\\": "src/"
+            "Errehub\\LaravelAlert\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -23,10 +24,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "YoussefErremili\\Alert\\AlertServiceProvider"
+                "Errehub\\Alert\\AlertServiceProvider"
             ],
             "aliases": {
-                "Alert": "YoussefErremili\\Alert\\AlertFacade"
+                "Alert": "Errehub\\Alert\\AlertFacade"
             }
         }
     },

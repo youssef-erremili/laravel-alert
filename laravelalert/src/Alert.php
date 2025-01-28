@@ -1,6 +1,6 @@
 <?php
 
-namespace YoussefErremili\Alert;
+namespace Errehub\Alert;
 
 class Alert
 {

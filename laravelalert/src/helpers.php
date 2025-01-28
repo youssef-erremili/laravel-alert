@@ -1,6 +1,6 @@
 <?php
 
-use YoussefErremili\Alert\Alert;
+use Errehub\Alert\Alert;
 
 function alert_success(string $message): string
 {
