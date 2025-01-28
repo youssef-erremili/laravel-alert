@@ -1,5 +1,5 @@
 {
-    "name": "errehub/laravelalert",
+    "name": "errehub/laravel-alert",
     "description": "This project aims to give developers a new experience with alerts in Laravel.",
     "type": "library",
     "license": "MIT",
@@ -9,24 +9,21 @@
         },
         "files": [
             "src/helpers.php"
-        ],
-        "exclude-from-classmap": [
-            "vendor/league/flysystem-local/*.php"
         ]
     },
     "authors": [
         {
-            "name": "youssef-erremili",
+            "name": "Youssef Erremili",
             "email": "yousseferremili19@gmail.com"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-                "Errehub\\Alert\\AlertServiceProvider"
+                "Errehub\\LaravelAlert\\AlertServiceProvider"
             ],
             "aliases": {
-                "Alert": "Errehub\\Alert\\AlertFacade"
+                "Alert": "Errehub\\LaravelAlert\\AlertFacade"
             }
         }
     },

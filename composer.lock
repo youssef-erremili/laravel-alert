@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b87c97db937f6403c36ee2e2dd57010e",
+    "content-hash": "e1cbbb67ff60c4966a79805cdfddade2",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -1164,59 +1164,6 @@
                 }
             ],
             "time": "2024-11-21T01:49:47+00:00"
-        },
-        {
-            "name": "youssef-erremili/laravel-alert",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/youssef-erremili/laravel-alert-package.git",
-                "reference": "e15ed1fe4377af7bac192334aecbb60dbd613a5e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/youssef-erremili/laravel-alert-package/zipball/e15ed1fe4377af7bac192334aecbb60dbd613a5e",
-                "reference": "e15ed1fe4377af7bac192334aecbb60dbd613a5e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "aliases": {
-                        "Alert": "YoussefErremili\\Alert\\AlertFacade"
-                    },
-                    "providers": [
-                        "YoussefErremili\\Alert\\AlertServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/helpers.php"
-                ],
-                "psr-4": {
-                    "YoussefErremili\\LaravelAlert\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "youssef-erremili",
-                    "email": "yousseferremili19@gmail.com"
-                }
-            ],
-            "description": "This project aims to give developers a new experience with alerts in Laravel.",
-            "support": {
-                "issues": "https://github.com/youssef-erremili/laravel-alert-package/issues",
-                "source": "https://github.com/youssef-erremili/laravel-alert-package/tree/v1.0.0"
-            },
-            "time": "2025-01-27T22:00:20+00:00"
         }
     ],
     "packages-dev": [],
