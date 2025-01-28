@@ -9,7 +9,6 @@
         "notification",
         "message",
         "flash",
-        "session",
         "toast"
     ],
     "autoload": {
