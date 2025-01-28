@@ -1,12 +1,12 @@
 {
     "name": "errehub/laravel-alert",
     "description": "This project aims to give developers a new experience with alerts in Laravel.",
-    "type": "library",
+    "type": "package",
     "license": "MIT",
     "keywords": ["alert", "laravel", "notification", "message", "flash", "session", "toast"],
     "autoload": {
         "psr-4": {
-            "Errehub\\LaravelAlert\\": "src/"
+            "Errehub\\LaravelAlert\\": "src"
         },
         "files": [
             "src/helpers.php"
