@@ -3,7 +3,6 @@
     "description": "This project aims to give developers a new experience with alerts in Laravel.",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.2",
     "autoload": {
         "psr-4": {
             "Errehub\\LaravelAlert\\": "src/"
