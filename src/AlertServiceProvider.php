@@ -2,6 +2,7 @@
 
 namespace Errehub\LaravelAlert;
 
+use Errehub\LaravelAlert\Alert;
 use Illuminate\Support\ServiceProvider;
 
 class AlertServiceProvider extends ServiceProvider

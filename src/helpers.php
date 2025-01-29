@@ -1,6 +1,6 @@
 <?php
 
-use Errehub\Alert\Alert;
+use Errehub\LaravelAlert\Alert;
 
 function alert_success(string $message): string
 {

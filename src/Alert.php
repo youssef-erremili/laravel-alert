@@ -1,6 +1,6 @@
 <?php
 
-namespace Errehub\Alert;
+namespace Errehub\LaravelAlert;
 
 class Alert
 {
