@@ -18,11 +18,17 @@ class AlertServiceProvider extends ServiceProvider
     public function boot()
     {
         // Load views from the package
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'alert');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'alert');
 
-        // Allow publishing of views
+        // Publish package assets (Css Ans JS)
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/alert'),
+            __DIR__ . '/../resources/assets/js' => public_path('vendor/errehub/laravel-alert/js'),
+            __DIR__ . '/../resources/assets/css' => public_path('vendor/errehub/laravel-alert/css'),
+        ], 'public');
+
+        // Publish package views (alerts)
+        $this->publishes([
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/errehub/laravel-alert'),
         ], 'views');
     }
 }

@@ -2,25 +2,59 @@
 
 namespace Errehub\LaravelAlert;
 
+use Illuminate\Support\Facades\Session;
+
 class Alert
 {
-    public function success(string $message): string
+
+    /**
+     * Flash a success message to the session and render the success view.
+     *
+     * @param string $message
+     * @return void
+     */
+    public function success(string $message): void
     {
-        return view('alert::alerts.success', ['message' => $message])->render();
+        Session::flash('alert_message', $message);
+        echo view('alert::alerts.success')->render();
     }
 
-    public function error(string $message): string
+
+    /**
+     * Flash an error message to the session and return the rendered error view.
+     *
+     * @param string $message
+     * @return string
+     */
+    public function error(string $message): void
     {
-        return view('alert::alerts.error', ['message' => $message])->render();
+        Session::flash('alert_message', $message);
+        echo view('alert::alerts.error')->render();
     }
 
-    public function info(string $message): string
+
+    /**
+     * Flash an info message to the session and render the info view.
+     *
+     * @param string $message
+     * @return void
+     */
+    public function info(string $message): void
     {
-        return view('alert::alerts.info', ['message' => $message])->render();
+        Session::flash('alert_message', $message);
+        echo view('alert::alerts.info')->render();
     }
 
-    public function warning(string $message): string
+
+    /**
+     * Flash a warning message to the session and render the warning view.
+     *
+     * @param string $message
+     * @return void
+     */
+    public function warning(string $message): void
     {
-        return view('alert::alerts.warning', ['message' => $message])->render();
+        Session::flash('alert_message', $message);
+        echo view('alert::alerts.warning')->render();
     }
 }
