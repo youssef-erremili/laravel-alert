@@ -65,7 +65,7 @@ You can use the package's Facade or class instance in your controllers to displa
 ### 2. In Blade Templates
 You can use helper functions in your Blade templates to display alerts.
 
-```php
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
