@@ -7,7 +7,7 @@ This package is based on the Laravel Framework (php) and provides a simple, cust
 Use Composer to install the package. Make sure Composer is already installed in your project.
 
 ```shell
-$ composer require errehub/laravel-alert
+  composer require errehub/laravel-alert
 ```
 
 # Setup
@@ -16,7 +16,7 @@ $ composer require errehub/laravel-alert
 First, you need to publish the CSS and JavaScript files, run the following Artisan command. This will copy the files to the public/vendor/youssef-erremili directory:
 
 ```shell
-$ php artisan vendor:publish --tag=public
+  php artisan vendor:publish --tag=public
 ```
 
 
@@ -25,7 +25,7 @@ $ php artisan vendor:publish --tag=public
 To publish the package's Blade view components to resources/vendor/youssef-erremili, use the following command:
 
 ```sh
-$ php artisan vendor:publish --tag=views
+  php artisan vendor:publish --tag=views
 ```
 
 # Usage
