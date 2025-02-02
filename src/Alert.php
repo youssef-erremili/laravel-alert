@@ -4,7 +4,7 @@ namespace Errehub\LaravelAlert;
 
 use Illuminate\Support\Facades\Session;
 
-class Alert
+final class Alert
 {
 
     /**
@@ -16,7 +16,7 @@ class Alert
     public function success(string $message): void
     {
         Session::flash('alert_message', $message);
-        echo view('alert::alerts.success')->render();
+        Session::flash('alert_type', 'success');
     }
 
 
@@ -24,12 +24,12 @@ class Alert
      * Flash an error message to the session and return the rendered error view.
      *
      * @param string $message
-     * @return string
+     * @return void
      */
     public function error(string $message): void
     {
         Session::flash('alert_message', $message);
-        echo view('alert::alerts.error')->render();
+        Session::flash('alert_type', 'error');
     }
 
 
@@ -42,7 +42,7 @@ class Alert
     public function info(string $message): void
     {
         Session::flash('alert_message', $message);
-        echo view('alert::alerts.info')->render();
+        Session::flash('alert_type', 'info');
     }
 
 
@@ -55,6 +55,6 @@ class Alert
     public function warning(string $message): void
     {
         Session::flash('alert_message', $message);
-        echo view('alert::alerts.warning')->render();
+        Session::flash('alert_type', 'warning');
     }
 }

@@ -19,12 +19,33 @@ First, you need to publish the CSS and JavaScript files, run the following Artis
   php artisan vendor:publish --tag=public
 ```
 
+### 2. Include Alert Views in Your App Layout
 
-### 2. Publish Alert View Components
+Use @include('alert::alerts.alert') in your main layout file. This will include the alert component in your layout and make it available to all pages that extend this layout.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Example</title>
+</head>
+<body>
+    @include('alert::alerts.alert')
+
+    <!-- Example of calling an alert -->
+    alert_success('Hello Youssef Erremili!')
+</body>
+</html>
+```
+
+
+### 3. Publish Alert View Components
 
 To publish the package's Blade view components to resources/vendor/youssef-erremili, use the following command:
 
-```sh
+```shell
   php artisan vendor:publish --tag=views
 ```
 
